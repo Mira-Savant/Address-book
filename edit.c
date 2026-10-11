@@ -71,7 +71,7 @@ void edit_name(struct AddressBook *addressBook)
 
 void edit_phone(struct AddressBook *addressBook)
 {
-    printf("Enter the mobile number which you want to edit:");
+    printf("Enter the mobile number which you want to edit: ");
     char mobile[15];
     scanf(" %[^\n]",mobile);
 
@@ -86,7 +86,7 @@ void edit_phone(struct AddressBook *addressBook)
             int new_flag=1;
             do{
                 char new_phone[20];
-                printf("Enter the phone number new one:");
+                printf("Enter the phone number new one: ");
                 scanf(" %[^\n]",new_phone);
 
                 if(is_valid_mobile_number(addressBook,new_phone))
@@ -96,7 +96,7 @@ void edit_phone(struct AddressBook *addressBook)
                 }
                 else
                 {
-                    printf("Enter valid phone number");
+                    printf("Enter valid phone number\n");
                 }
 
             }while(new_flag);
@@ -107,7 +107,7 @@ void edit_phone(struct AddressBook *addressBook)
 
 void edit_mail(struct AddressBook *addressBook)
 {
-    printf("Enter the mobile email which you want to edit:");
+    printf("Enter the mobile email which you want to edit: ");
     char mail[50];
     scanf(" %[^\n]",mail);
 
@@ -132,7 +132,7 @@ void edit_mail(struct AddressBook *addressBook)
                 }
                 else
                 {
-                    printf("Enter valid email id");
+                    printf("Enter valid email id\n");
                 }
 
             }while(new_flag);
